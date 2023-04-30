@@ -1,0 +1,298 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/js.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
+        <script src="highlight/highlight.js/highlight.pack.js"></script>
+    <script>hljs.highlightAll();</script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="our_team.html">Our Team</a>
+                </li>
+                <li>
+                    <a href="cats.html">Cats</a>
+                </li>
+                <li>
+                    <a href="contact_us.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="table.html">Table</a>
+                </li>
+                <li>
+                    <a class="active">LR</a>
+                </li>
+                <li>
+                    <a>Posts</a>
+                    <ul>
+                        <li>
+                            <a href="post1.html">Post 1</a>
+                        </li>
+                        <li>
+                            <a href="post2.html">Post 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+            <div class="section">
+                <div class="top-navbar">
+                    <div class="hamburger">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lr">
+        <p class="h1">Лабораторные работы JavaScript</p>
+        <p class="h1">Вариант №6</p>
+        <div class="lr1">
+            <p class="h2">Лабораторная работа №1</p>
+            <p><b>1 задание.</b> Даны длины ребер a, b, c прямоугольного параллелепипеда. Найти его объем V = a·b·c и площадь поверхности S = 2·(a·b + b·c + a·c).</p>
+<pre><code>
+    alert("Данная программа находит объем прямоугольного параллелепипеда и площадь его поверхности");
+    var a = prompt("Введите длину ребра a в сантиметрах:");
+    var b = prompt("Введите длину ребра b в сантиметрах:");
+    var c = prompt("Введите длину ребра c в сантиметрах:");
+    var v = a*b*c;
+    alert("Объем прямоугольного параллелепипеда" + v + "см");
+    var s = 2*((a*b)+(b*c)+(a*c));
+    alert("Площадь поверхности прямоугольного параллелепипеда" + s + "см");
+    
+</code></pre>
+            <button id="but-lr1-z1">Click</button>
+            <p><b>2 задание.</b> Дано двузначное число. Вывести вначале его левую цифру (десятки), а затем — его правую цифру (единицы). Для нахождения десятков использовать операцию деления нацело, для нахождения единиц — операцию взятия остатка от деления.</p>
+<pre><code>
+    alert("Данная программа выводит единицы и десятки двузначного числа");
+    var N = prompt("Введите двузначное число");
+    var Nu = N%10;
+    var Nd = Math.floor(N/10);
+    alert("Десятки " + Nd + ", единицы " + Nu);
+    
+</code></pre>
+            <button id="but-lr1-z2">Click</button>
+        </div>
+        <div class="lr2">
+            <p class="h2">Лабораторная работа №2</p>
+            <p><b>1 задание.</b> Даны три целых числа А, В, С. Проверить истинность высказывания: «Справедливо двойное неравенство А&lt;B&lt;C».</p>
+<pre><code>
+    alert("Данная программа проверяет истинность высказывания "Справедливо двойное неравенство a&lt;b&lt;c"");
+    var a = prompt("Введите число a");
+    var b = prompt("Введите число b");
+    var c = prompt("Введите число c");
+    if (a&lt;b){
+        if (b&lt;c){
+            alert("Высказывание "Справедливо двойное неравенство a&lt;b&lt;c" истинно")
+        }
+        else{
+            alert("Высказывание "Справедливо двойное неравенство a&lt;b&lt;c" ложно")
+        }
+    }
+    else{
+        alert("Высказывание "Справедливо двойное неравенство a&lt;b&lt;c" ложно")
+    }
+    
+</code></pre>
+            <button id="but-lr2-z1">Click</button>
+            <p><b>2 задание.</b> Даны два числа. Вывести большее из них.</p>
+<pre><code>
+    alert("Данная программа выводит большее число из двух введенных");
+    var a = prompt("Введите первое число");
+    var b = prompt("Введите второе число");
+    if (a&gt;b){
+        alert(a)
+        }
+    else{
+        alert(b)
+    }
+    
+</code></pre>
+            <button id="but-lr2-z2">Click</button>
+            <p><b>3 задание.</b> Вычислить значение функции y = f(x) при произвольных значениях х. </p>
+            <div class="img"><img src="images/z3.png"></div>
+<pre><code>
+    alert("Данная программа вычисляет значение функции y = f(x) при произвольных значениях x");
+    var a = 7.1;
+    var b = 4.2;
+    var x = prompt("Введите значение x");
+    if (x &lt;= 3){
+        var y = b - x*x - 1
+    }
+        else if (x &gt;3){
+            if (x &lt;8){
+                y = ((Math.cos(2*a*x*x) + 1) / 2) + 3
+            }
+            else {
+                y = Math.sqrt(Math.log(x) + a)
+            }
+        } 
+        
+</code></pre>
+            <button id="but-lr2-z3">Click</button>
+            <p><b>4 задание.</b> Вычислить значение функции y = f(x) при произвольных значениях х. Для вычисления значений функции использовать оператор switch.</p>
+            <div class="img"><img src="images/z4.png"></div>
+<pre><code>
+    alert("Данная программа вычисляет значение функции y = f(x) при произвольных значениях x");
+    var x = prompt("Введите значение x");
+    var a = 7.1;
+    var b = 4.2;
+    switch(true){
+        case (x == 3):
+            var y = b - x*x - 1;
+            break;
+        case (x == 7):
+            y = (Math.cos((2*a*x*x) + 6) / 2);
+            break;
+        case (x == 8):
+            y = Math.sqrt(Math.log(x)+a);
+            break;
+        default:
+            y = 0
+    }
+    alert(y)  
+    
+</code></pre>
+            <button id="but-lr2-z4">Click</button>
+            <button id="scroll-to-top-btn"><i class="fa fa-chevron-up"></i></button>
+        </div>
+        </div>
+    </body>
+    <script> <!-- Задание 1 Лаба 1-->
+document.getElementById("but-lr1-z1").addEventListener("click", function() {
+    alert("Данная программа находит объем прямоугольного параллелепипеда и площадь его поверхности");
+    var a = prompt("Введите длину ребра a в сантиметрах:");
+    var b = prompt("Введите длину ребра b в сантиметрах:");
+    var c = prompt("Введите длину ребра c в сантиметрах:");
+    var v = a*b*c;
+    alert("Объем прямоугольного параллелепипеда " + v + " см");
+    var s = 2*((a*b)+(b*c)+(a*c));
+    alert("Площадь поверхности прямоугольного параллелепипеда " + s + " см");
+});
+    </script>
+    
+    <script> <!-- Задание 2 Лаба 1 -->
+document.getElementById("but-lr1-z2").addEventListener("click", function(){
+    alert("Данная программа выводит единицы и десятки двузначного числа");
+    var N = prompt("Введите двузначное число");
+    var Nu = N%10;
+    var Nd = Math.floor(N/10);
+    alert("Десятки " + Nd + ", единицы " + Nu);
+});
+    </script> 
+    
+    <script> <!-- Задание 1 Лаба 2 -->
+document.getElementById("but-lr2-z1").addEventListener("click", function() {
+    alert('Данная программа проверяет истинность высказывания "Справедливо двойное неравенство a<b<c"');
+    var a = prompt("Введите число a");
+    var b = prompt("Введите число b");
+    var c = prompt("Введите число c");
+    if (a<b){
+        if (b<c){
+            alert('Высказывание "Справедливо двойное неравенство a<b<c" истинно')
+        }
+        else{
+            alert('Высказывание "Справедливо двойное неравенство a<b<c" ложно')
+        }
+    }
+    else{
+        alert('Высказывание "Справедливо двойное неравенство a<b<c" ложно')
+    }
+});
+    </script>
+    
+    <script> <!-- Задание 2 Лаба 2 -->
+document.getElementById("but-lr2-z2").addEventListener("click", function () {
+    alert("Данная программа выводит большее число из двух введенных");
+    var a = prompt("Введите первое число");
+    var b = prompt("Введите второе число");
+    if (a>b){
+        alert(a)
+    }
+    else{
+        alert(b)
+    }
+});
+    </script>
+    
+    <script> <!-- Задание 3 Лаба 2 --> 
+document.getElementById("but-lr2-z3").addEventListener("click", function () {
+    alert("Данная программа вычисляет значение функции y = f(x) при произвольных значениях x");
+    var a = 7.1;
+    var b = 4.2;
+    var x = prompt("Введите значение x");
+    if (x <= 3){
+        var y = b - x*x - 1
+    }
+        else if (x>3){
+            if (x<8){
+                y = ((Math.cos(2*a*x*x) + 1) / 2) + 3
+            }
+            else {
+                y = Math.sqrt(Math.log(x) + a)
+            }
+        }
+});
+    </script>
+    
+    <script> <!-- Задание 4 Лаба 2 -->
+document.getElementById("but-lr2-z4").addEventListener("click", function() {
+    alert("Данная программа вычисляет значение функции y = f(x) при произвольных значениях x");
+    var x = prompt("Введите значение x");
+    var a = 7.1;
+    var b = 4.2;
+    switch(true){
+        case (x == 3):
+            var y = b - x*x - 1;
+            break;
+        case (x == 7):
+            y = (Math.cos((2*a*x*x) + 6) / 2);
+            break;
+        case (x == 8):
+            y = Math.sqrt(Math.log(x)+a);
+            break;
+        default:
+            y = 0
+    }
+    alert(y)
+});
+    </script>
+    
+<script> <!--МЕНЮ-->
+        var hamburger = document.querySelector(".hamburger"); 
+        hamburger.addEventListener("click", () => {
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>
+    
+    <script> <!--СКРОЛЛ-->
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("scroll-to-top-btn").style.display = "block";
+  } else {
+    document.getElementById("scroll-to-top-btn").style.display = "none";
+  }
+}
+
+document.getElementById("scroll-to-top-btn").addEventListener("click", function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+    </script>
+</html>

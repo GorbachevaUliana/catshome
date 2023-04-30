@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cat's Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <img src="./images/headcat2.png" class="headcat" alt="the top of the cat">
+        <div class="container">
+            <div class="sidebar">
+                <ul>
+                <li>
+                    <a class="active">Home</a>
+                </li>
+                <li>
+                    <a href="our_team.html">Our Team</a>
+                </li>
+                <li>
+                    <a href="cats.html">Cats</a>
+                </li>
+                <li>
+                    <a href="contact_us.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="table.html">Table</a>
+                </li>
+                <li>
+                    <a href="js.html">LR</a>
+                </li>
+                <li>
+                    <a>Posts</a>
+                    <ul>
+                        <li>
+                            <a href="post1.html">Post 1</a>
+                        </li>
+                        <li>
+                            <a href="post2.html">Post 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+            <div class="section">
+                <div class="top-navbar">
+                    <div class="hamburger">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="./images/slide1.jpg" class="slide active">
+            <img src="./images/slide2.jpg" class="slide">
+            <img src="./images/slide3.jpg" class="slide">
+            <div class="slider-controls">
+                <button class="prev-slide">&#8249;</button>
+                <div class="radio-buttons">
+                    <input type="radio" name="slider-radio" id="radio1" checked>
+                    <label for="radio1"></label>
+                    <input type="radio" name="slider-radio" id="radio2">
+                    <label for="radio2"></label>
+                    <input type="radio" name="slider-radio" id="radio3">
+                    <label for="radio3"></label>
+                </div>
+                <button class="next-slide">&#8250;</button>
+            </div>
+        </div>
+        <div class="part-posts">
+            <div class="posts">
+                <div class="title">
+                    <h2 style="color:#f7a110">Featured Posts</h2>
+                </div>
+                <div class="block-post1">
+                    <img src="./images/post1.jpg" width="350" height="220" alt="there are a lot of cats in the shelter">
+                    <h3 style="color:#232536">The first of March is Cat Day!</h3>
+                    <div class="postt1">
+                        <p>In the shelter "Cat's Home" cats celebrate their professional holiday.</p>
+                    </div>
+                    <div class="button-post1">
+                        <a href="post1.html" style="text-decoration: none">Read more</a>
+                    </div>
+                </div>
+                <div class="block-post2">
+                    <img src="./images/post2.jpg" width="300" height="310" alt="a black cat with huge yellow eyes">
+                    <h3 style="color:#232536">How to take a cat?</h3>
+                    <div class="postt2">
+                        <p>How to choose a pet and help it quickly adapt to a new home.</p>
+                    </div>
+                    <div class="button-post2">
+                        <a href="post2.html" style="text-decoration: none">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part-mission">
+        <div class="part-mission-cats">
+            <div class="our-mission">
+                <img src="./images/ourm.jpg" width="629" height="416" alt="street cats against the sky">
+                </div>
+            </div>
+            <div class="white-background">
+                <div class="text-top">our mission</div>
+                <div class="text-middle">Salvation</div>
+                <div class="text-bottom">More than 200 cats live in our shelter, which we take care of every day and provide a good life</div>
+            </div>
+        </div>
+        <div class="part-cats">
+            <div class="title-cats">
+                <p>Choose a Cat</p>
+            </div>
+            <div class="choice">
+                <img src="./images/choice1.jpg" alt="black and white cat with funny white mustache">
+                    <div class="about">Milo</div>
+                </div>
+            <div class="choice">
+                <img src="./images/choice2.jpg" alt="black and white cat with yellow eyes">
+                    <div class="about">Louie</div>
+            </div>
+            <div class="choice">
+                <img src="./images/choice3.jpg" alt="tricolor beautiful cat">
+                    <div class="about">Gizmo</div>
+            </div>
+            <div class="button-cats">Read more</div>
+        </div>
+        <button id="scroll-to-top-btn"><i class="fa fa-chevron-up"></i></button>
+    <script> <!--МЕНЮ-->
+        var hamburger = document.querySelector(".hamburger"); 
+        hamburger.addEventListener("click", () => {
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>
+    <script> <!--СКРОЛЛ-->
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("scroll-to-top-btn").style.display = "block";
+  } else {
+    document.getElementById("scroll-to-top-btn").style.display = "none";
+  }
+}
+
+document.getElementById("scroll-to-top-btn").addEventListener("click", function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+    </script>
+    <script> <!--СЛАЙДЕР-->
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const radioButtons = document.querySelectorAll('.radio-buttons input[type="radio"]');
+
+function showSlide(index) {
+    slides[currentIndex].classList.remove('active');
+    radioButtons[currentIndex].checked = false;
+    currentIndex = (index + slides.length) % slides.length;
+    slides[currentIndex].classList.add('active');
+    radioButtons[currentIndex].checked = true;
+}
+
+document.querySelector('.prev-slide').addEventListener('click', () => {
+    showSlide(currentIndex - 1);
+});
+
+document.querySelector('.next-slide').addEventListener('click', () => {
+    showSlide(currentIndex + 1);
+});
+
+radioButtons.forEach((radioButton, index) => {
+    radioButton.addEventListener('click', () => {
+        showSlide(index);
+    });
+});
+    </script>
+    <footer>
+        <a href="#">Написать письмо</a>
+    </footer>
+    </body>
+</html>

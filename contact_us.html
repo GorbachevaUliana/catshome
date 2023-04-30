@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="./css/contact_us.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+   <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="our_team.html">Our Team</a>
+                </li>
+                <li>
+                    <a href="cats.html">Cats</a>
+                </li>
+                <li>
+                    <a class="active" href="contact_us.html">Contact Us</a>
+                </li>
+                <li>
+                    <a>Posts</a>
+                    <ul>
+                        <li>
+                            <a href="post1.html">Post 1</a>
+                        </li>
+                        <li>
+                            <a href="post2.html">Post 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="h">
+        <div class="hs">CONTACT US</div>
+        <div class="hb">Let's start a conversation</div>
+        <div class="text">In this section you can find out about our working hours and contact us via emails.</div>
+        </div>
+        <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", () => {
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>
+    <footer>
+        <a href="#">Написать письмо</a>
+    </footer>
+    </body>
+</html>

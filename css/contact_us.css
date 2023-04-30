@@ -1,0 +1,105 @@
+.h{
+    text-align: center;
+}
+.hs{
+    font-family: 'Phudu', cursive;
+    text-align: center;
+}
+
+.hb{
+    color: #f7a110;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px; 
+    text-align: center;
+}
+
+.text{
+    font-family:Courier New, monospace;
+    font-size: 28px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.container .sidebar {
+    background-color:#232536;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 340px;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Phudu', cursive;
+}
+
+.container .sidebar ul li a {
+    display: block;
+    padding: 13px 30px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+.container .sidebar ul li a:hover,
+.container .sidebar ul li a.active {
+    color: #232536;
+    background: white;
+}
+
+.container .section {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.top_navbar {
+    background-color: #232536;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.container .section .top_navbar .hamburger {
+    margin-left: 50px;
+}
+.container .section .top_navbar .hamburger a {
+    font-size: 30px;
+    color: #f4fbff;
+}
+
+.container .section .top_navbar .hamburger a:hover {
+    color: #64645d;
+}
+
+body.active .container .sidebar {
+    left: -225px;
+}
+
+body.active .container .section {
+    margin-left: 0;
+    width: 100%;
+}
+
+body{
+  min-height: 100%;
+  display: grid;
+}
+
+footer {
+    padding-top:20px;
+    background: #232536;
+    color: white;
+    width: 100%;
+    height: 40px;
+    bottom:0;
+    left:0;
+    position: fixed;
+}
+
+footer a {
+    color: white;
+    margin-left: 100px;
+}

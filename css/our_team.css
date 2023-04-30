@@ -1,0 +1,230 @@
+.h{
+    color: #f7a110;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px; 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.img{
+    display: inline-block;
+    margin-left: 270px;
+}
+
+.about{
+    text-align: center;
+    font-family: 'Phudu', cursive;
+    font-size: 20px;
+}
+.container .sidebar {
+    background-color:#232536;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 340px;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Phudu', cursive;
+}
+
+.container .sidebar ul li a {
+    display: block;
+    padding: 13px 30px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+.container .sidebar ul li a:hover,
+.container .sidebar ul li a.active {
+    color: #232536;
+    background: white;
+}
+
+.container .section {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.top_navbar {
+    background-color: #232536;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.container .section .top_navbar .hamburger {
+    margin-left: 50px;
+}
+.container .section .top_navbar .hamburger a {
+    font-size: 30px;
+    color: #f4fbff;
+}
+
+.container .section .top_navbar .hamburger a:hover {
+    color: #64645d;
+}
+
+body.active .container .sidebar {
+    left: -225px;
+}
+
+body.active .container .section {
+    margin-left: 0;
+    width: 100%;
+}
+
+body{
+  min-height: 100%;
+  display: grid;
+    margin-bottom: 100px;
+}
+
+footer {
+    padding-top:20px;
+    background: #232536;
+    color: white;
+    width: 100%;
+    height: 40px;
+    bottom:0;
+    left:0;
+    position: fixed;
+}
+
+footer a {
+    color: white;
+    margin-left: 100px;
+}
+
+#myImg, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6, #myImg7, #myImg8, #myImg9, #myImg10  {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8, .modal9, .modal10 {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content, .modal-content2, .modal-content3, .modal-content4, .modal-content5, .modal-content6, .modal-content7, .modal-content8, .modal-content9, .modal-content10 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption, #caption2, #caption3, #caption4, #caption5, #caption6, #caption7, #caption8, #caption9, #caption10 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, .modal-content2, .modal-content3, .modal-content4, .modal-content5, .modal-content6, .modal-content7, .modal-content8, .modal-content9, .modal-content10, #caption, #caption2, #caption3, #caption4, #caption5, #caption6, #caption7, #caption8, #caption9, #caption10 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close, .close2, .close3, .close4, .close5, .close6, .close7, .close8, .close9, .close10 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close5:hover,
+.close5:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close6:hover,
+.close6:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close7:hover,
+.close7:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close8:hover,
+.close8:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close9:hover,
+.close9:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close10:hover,
+.close10:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}

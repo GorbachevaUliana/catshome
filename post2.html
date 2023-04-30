@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Post2</title>
+        <link rel="stylesheet" href="./css/post2.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+   <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="our_team.html">Our Team</a>
+                </li>
+                <li>
+                    <a href="cats.html">Cats</a>
+                </li>
+                <li>
+                    <a href="contact_us.html">Contact Us</a>
+                </li>
+                <li>
+                    <a>Posts</a>
+                    <ul>
+                        <li>
+                            <a href="post1.html">Post 1</a>
+                        </li>
+                        <li>
+                            <a class="active" href="post2.html">Post 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="h">How to take a cat?</div>
+        <div class="postimg"><img id="myImg" src="images/post2.jpg" width="500px" height="500px">
+        <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div></div>
+        </div>
+        <div class="post">
+            <p>
+            1. Prepare for an informed choice. Before you visit the shelter, decide what kind of cat you want. Take into account your life situation, space, available resources and your ability to provide care and care for the animal.
+            </p>
+            <p>
+            2. Visit the shelter and evaluate the animals. Go through the entire shelter and evaluate all the cats that are kept there. If you can't decide on one particular cat, ask the shelter staff for advice.
+            </p>
+            <p>
+            3. Get to know the selected cat. If you have chosen a cat, let him get to know you. Talk to him quietly, touch him and play with him to make contact.
+            </p>
+            <p>
+            4. Fill out the documents. As a rule, in order to pick up a cat from a shelter, you need to fill out an application, present your passport and get recommendations on animal care.
+            </p>
+            <p>
+            5. Prepare for the move. After you complete the paperwork and choose a cat, prepare the house for his arrival. Provide him with a sleeping place, bowls for food and water, a toilet tray, toys and everything necessary for care.
+            </p>
+        </div>
+        <div class="button1">Share</div>
+        <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", () => {
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>
+    <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+    
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+            </script>
+    <footer>
+        <a href="#">Написать письмо</a>
+    </footer>
+    </body>
+</html>

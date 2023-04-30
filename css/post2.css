@@ -1,0 +1,563 @@
+.h{
+    color: #f7a110;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px; 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.postimg{
+    margin-left:35%;
+    margin-bottom: 50px;
+}
+.post{
+    font-family:Courier New, monospace;
+    font-size: 28px;
+    margin-left:300px;
+    margin-right: 200px;
+    margin-bottom: 150px;
+}
+
+.button1 {
+    padding: 16px 48px;
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    margin-left: 45%;
+    background: #FFD050;
+    font-family: 'Phudu', cursive;
+    font-size: 18px;
+    top:1680px;
+}
+.container {
+    height: 80px;
+}
+.container .sidebar {
+    background-color:#232536;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 340px;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Phudu', cursive;
+}
+
+.container .sidebar ul li a {
+    display: block;
+    padding: 13px 30px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+.container .sidebar ul li a:hover,
+.container .sidebar ul li a.active {
+    color: #232536;
+    background: white;
+}
+
+.container .section {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.top_navbar {
+    background-color: #232536;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.container .section .top_navbar .hamburger {
+    margin-left: 50px;
+}
+.container .section .top_navbar .hamburger a {
+    font-size: 30px;
+    color: #f4fbff;
+}
+
+.container .section .top_navbar .hamburger a:hover {
+    color: #64645d;
+}
+
+body.active .container .sidebar {
+    left: -225px;
+}
+
+body.active .container .section {
+    margin-left: 0;
+    width: 100%;
+}
+
+body{
+  min-height: 100%;
+  display: grid;
+}
+
+footer {
+    padding-top:20px;
+    background: #232536;
+    color: white;
+    width: 100%;
+    height: 40px;
+    bottom:0;
+    left:0;
+    position: fixed;
+}
+
+footer a {
+    color: white;
+    margin-left: 100px;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+/* Модальный (фон) */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  padding-top: 100px; /* Расположение коробки */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полный высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0,0,0); /* Цвет запасной вариант */
+  background-color: rgba(0,0,0,0.9); /* Черный с непрозрачностью */
+}
+
+/* Модальное содержание (изображение) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Заголовок модального изображения ( текст изображения) - та же ширина, что и изображение */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Добавить анимацию - величение модели */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* Кнопка закрытия */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media all and (max-device-width:700px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 40px;
+        margin-bottom: 120px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 25%;
+    }
+    .container .sidebar{
+        height: 450px;
+    }
+    .container .sidebar ul li a{
+        font-size: 26px;
+    }
+    .button1{
+        top: 2480px;
+        font-size: 26px;
+        width: 80px;
+        height: 26px;
+    }
+    footer{
+        height: 60px;
+    }
+    footer a{
+        font-size: 28px;
+    }
+}
+
+@media all and (max-device-width:900px) and (min-device-width:701px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 40px;
+        margin-bottom: 170px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 25%;
+    }
+    .container .sidebar{
+        height: 450px;
+    }
+    .container .sidebar ul li a{
+        font-size: 26px;
+    }
+    .button1{
+        top:2490px;
+    }
+    footer{
+        height: 60px;
+    }
+    footer a{
+        font-size: 28px;
+    }
+}
+
+@media all and (max-device-width:990px) and (min-device-width:901px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 40px;
+        margin-bottom: 170px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 25%;
+    }
+    .container .sidebar{
+        height: 450px;
+    }
+    .container .sidebar ul li a{
+        font-size: 26px;
+    }
+    .button1{
+        top:2470px;
+    }
+    footer{
+        height: 60px;
+    }
+    footer a{
+        font-size: 25px;
+    }
+}
+
+@media all and (max-device-width:1040px) and (min-device-width:991px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 40px;
+        margin-bottom: 170px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 25%;
+    }
+    .container .sidebar{
+        height: 450px;
+    }
+    .container .sidebar ul li a{
+        font-size: 26px;
+    }
+    .button1{
+        top:2400px;
+    }
+    footer{
+        height: 60px;
+    }
+    footer a{
+        font-size: 25px;
+    }
+}
+@media all and (max-device-width:1088px) and (min-device-width:1041px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 40px;
+        margin-bottom: 170px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 25%;
+    }
+    .container .sidebar{
+        height: 450px;
+    }
+    .container .sidebar ul li a{
+        font-size: 26px;
+    }
+    .button1{
+        top: 2350px;
+    }
+    footer{
+        height: 60px;
+    }
+    footer a{
+        font-size: 28px;
+    }
+}
+
+@media all and (max-device-width:1135px) and (min-device-width:1089px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 250px;
+        margin-right: 250px;
+        font-size: 24px;
+        margin-bottom: 150px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 35%;
+    }
+    .container .sidebar{
+        height: 350px;
+    }
+    .container .sidebar ul li a{
+        font-size: 20px;
+    }
+    .button1{
+        top: 1580px;
+    }
+    footer{
+        height: 40px;
+    }
+    footer a{
+        font-size: 22px;
+    }
+}
+
+@media all and (max-device-width:1178px) and (min-device-width:1136px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 250px;
+        margin-right: 250px;
+        font-size: 24px;
+        margin-bottom: 150px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 35%;
+    }
+    .container .sidebar{
+        height: 350px;
+    }
+    .container .sidebar ul li a{
+        font-size: 20px;
+    }
+    .button1{
+        top: 1550px;
+    }
+    footer{
+        height: 40px;
+    }
+    footer a{
+        font-size: 22px;
+    }
+}
+
+@media all and (max-device-width:1276px) and (min-device-width:1179px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 250px;
+        margin-right: 250px;
+        font-size: 24px;
+        margin-bottom: 150px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 35%;
+    }
+    .container .sidebar{
+        height: 350px;
+    }
+    .container .sidebar ul li a{
+        font-size: 20px;
+    }
+    .button1{
+        top: 1500px;
+    }
+    footer{
+        height: 40px;
+    }
+    footer a{
+        font-size: 22px;
+    }
+}
+
+@media all and (max-device-width:1410px) and (min-device-width:1277px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 250px;
+        margin-right: 250px;
+        font-size: 24px;
+        margin-bottom: 150px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 35%;
+    }
+    .container .sidebar{
+        height: 350px;
+    }
+    .container .sidebar ul li a{
+        font-size: 20px;
+    }
+    .button1{
+        top: 1410px;
+    }
+    footer{
+        height: 40px;
+    }
+    footer a{
+        font-size: 22px;
+    }
+}
+
+@media all and (max-device-width:1632px) and (min-device-width:1411px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 250px;
+        margin-right: 250px;
+        font-size: 24px;
+        margin-bottom: 150px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 35%;
+    }
+    .container .sidebar{
+        height: 350px;
+    }
+    .container .sidebar ul li a{
+        font-size: 20px;
+    }
+    .button1{
+        top: 1370px;
+    }
+    footer{
+        height: 40px;
+    }
+    footer a{
+        font-size: 22px;
+    }
+}
+
+@media all and (max-device-width:1834px) and (min-device-width:1633px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 250px;
+        margin-right: 250px;
+        font-size: 24px;
+        margin-bottom: 150px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 35%;
+    }
+    .container .sidebar{
+        height: 350px;
+    }
+    .container .sidebar ul li a{
+        font-size: 20px;
+    }
+    .button1{
+        top: 1270px;
+    }
+    footer{
+        height: 40px;
+    }
+    footer a{
+        font-size: 22px;
+    }
+}
+
+@media all and (max-device-width:2000px) and (min-device-width:1835px){
+    .h{
+        font-size:46px;
+    }
+    .post{
+        margin-left: 250px;
+        margin-right: 250px;
+        font-size: 24px;
+        margin-bottom: 150px;
+    }
+    .postimg{
+        margin-bottom: 10px;
+        margin-left: 35%;
+    }
+    .container .sidebar{
+        height: 350px;
+    }
+    .container .sidebar ul li a{
+        font-size: 20px;
+    }
+    .button1{
+        top: 1520px;
+    }
+    footer{
+        height: 40px;
+    }
+    footer a{
+        font-size: 22px;
+    }
+}
