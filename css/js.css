@@ -68,7 +68,7 @@ body.active .container .section {
     margin-right: 14%;
     margin-bottom: 5%;
 }
-.h1, .h2 {
+h1, h2 {
     font-family: 'Josefin Sans', sans-serif;
     color:#f7a110;
     text-align: center;
